@@ -1,0 +1,12 @@
+<script src = "http://nparashuram.com/IndexedDBShim/indexeddb.shim.js"></script>
+<script type = "text/html">
+	window.shimIndexedDB  && window.shimIndexedDB.__useShim();
+</script>
+
+<script>
+
+var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
+
+var request = indexedDB.deleteDatabase("employees");
+console.log("done");
+</script>
